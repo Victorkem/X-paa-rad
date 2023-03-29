@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="dokumentnavn">Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <style>
+        .brettKnapper{
+            font-size: 2rem;
+            width: 60px;
+            box-sizing: border-box;
+            height: 60px;
+            border-style: solid;
+            border-color: darkgray;
+            border-width: 1px;
+        }
+        #spillcontainer{
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            padding: 1px;
+        }
+    </style>
+    <script src="script.js"></script>
+    <input id="størrelse" type="number">
+    <button onclick="nyttBrett()">Nytt brett</button>
+    <h1 id="tur"></h1>
+    <div id="spillContainer"></div>
+</body>
+</html>
